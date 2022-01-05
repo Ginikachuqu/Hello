@@ -1,0 +1,45 @@
+.clip {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: $right-section-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(0% at 100% 0);
+  transition: clip-path 0.3s;
+
+  .clip__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #090909;
+    font-family: $logo-font;
+
+    h2 {
+      display: inline;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: rgb(201, 51, 51);
+      text-decoration: none;
+      transition: color 0.5s ease-in-out;
+
+      &:hover {
+        color: rgb(216, 97, 97);
+      }
+    }
+  }
+}
+
+.show {
+  clip-path: circle(141.4% at 100% 0);
+}

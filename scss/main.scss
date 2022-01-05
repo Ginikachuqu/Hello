@@ -1,0 +1,26 @@
+@import "config.scss";
+@import "login.scss";
+@import "clip-path.scss";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: $body-font;
+  background-color: #f4f4f4;
+  color: #f4f4f4;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello App &mdash; 👋</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left__section">
+        <header>
+          <div class="logo">Hello!</div>
+        </header>
+
+        <div class="form__section">
+          <form id="form">
+            <div class="title">Login</div>
+
+            <div>
+              <label for="username">User Name</label>
+              <i class="fas fa-user"></i>
+
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter Username"
+              />
+
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+
+              <div class="error"></div>
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <i class="fas fa-lock"></i>
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password here"
+              />
+
+              <i class="fas fa-exclamation-circle failure-icon"></i>
+              <i class="far fa-check-circle success-icon"></i>
+
+              <div class="error"></div>
+            </div>
+            <button id="btn" type="submit">Submit</button>
+            <!-- Override system IP address -->
+            <input type="text" name="address" id="IP2" />
+            <small><em>Override system IP address</em></small>
+          </form>
+        </div>
+      </div>
+
+      <div class="clip">
+        <div class="clip__container">
+          <h2 id="displayUserName"></h2>
+          <p>You have successfully logged in!</p>
+          <a href="#" class="close">Close Window</a>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

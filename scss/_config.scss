@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto&display=swap");
+
+$left-section-text-color: #f4f4f4;
+$left-section-color: #090909;
+$right-section-text-color: #090909;
+$right-section-color: #f4f4f4;
+// $login-image: url(../img/bg-image.jpg);
+$background-opacity: 0.9;
+$logo-font: "Noto Sans Mono", monospace;
+$body-font: "Roboto", sans-serif;
+
+@mixin buttonEaseOut {
+  transition: transform 0.5s ease-out;
+}
